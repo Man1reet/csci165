@@ -27,9 +27,9 @@ result = parseInt(jQuery( '#op1' ).val()) * parseInt(jQuery( '#op2' ).val());
 
 text= jQuery( '#op1' ).val() +  " * "   + jQuery( '#op2 ' ).val() + "  =  ";
 result = text + result;
-jQuery ( '#result' ).html (text  +  result);
+jQuery ( '#result' ).html (result);
 
-result ="<span id='mulstyle'>" + result + "</span>'";
+result ="<span id='mulstyle'>" + result + "</span>";
 old_div_content = jQuery('#history').html();
 new_div_content = old_div_content + result + '<br>';
 jQuery('#history').html(new_div_content);
@@ -41,7 +41,7 @@ text= jQuery( '#op1' ).val() +  " / "   + jQuery( '#op2 ' ).val() + "  =  ";
 result = text + result;
 jQuery ( '#result' ).html (result);
 
-result ="<span id='divstyle'>" + result + "</span>'";
+result ="<span id='divstyle'>" + result + "</span>";
 old_div_content = jQuery('#history').html();
 new_div_content = old_div_content + result + '<br>';
 jQuery('#history').html(new_div_content);
